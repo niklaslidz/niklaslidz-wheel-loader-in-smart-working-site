@@ -1,0 +1,8 @@
+<launch>
+
+<node ns="imu_filtered_imu1" pkg="imu_filter" type="imu_filt.py" name="imu_fil" output="screen">
+
+    <remap from="imu" to= "/imu_data1"/>
+    <remap from="/imu_filtered" to= "/imu_data1_filtered"/>
+  </node>
+</launch>

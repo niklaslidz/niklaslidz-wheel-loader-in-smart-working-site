@@ -1,0 +1,63 @@
+#!/usr/bin/env python
+import rospy
+from sensor_msgs.msg import Imu
+
+class imu_filter():
+    def __init__(self, rate = 100):
+        self.subs()
+        self.pubs()
+        self.rate_imu = rospy.Rate(rate)
+        self.imu_pub = rospy.Publisher('/imu_data_filtered', Imu, queue_size=10)
+
+
+    def subs(self):
+       rospy.Subscriber("imu", Imu,self.imuCallback)
+    def imuCallback(self,data):
+       self.orientation_filter = (data.orientation.x,
+                                  data.orientation.y,
+                                  data.orientation.z,
+                                  data.orientation.w)
+       self.angular_velocity_x_filter = data.angular_velocity.x
+       self.angular_velocity_y_filter = data.angular_velocity.y
+       self.angular_velocity_z_filter = data.angular_velocity.z
+       
+       self.linear_acceleration_x_filter = 0
+       self.linear_acceleration_y_filter = 0
+       self.linear_acceleration_z_filter = 0
+        
+       self.orientation_covariance = data.orientation_covariance
+       self.angular_velocity_covariance = data.angular_velocity_covariance
+       self.linear_acceleration_covariance = [0.0, 0.0, 0.0,
+                                              0.0, 0.0, 0.0,
+                                              0.0, 0.0, 0.0]
+
+
+    def pubs(self):
+        try:
+            imu = Imu()
+            #publish imu here
+            imu.header.stamp = rospy.Time.now()
+            imu.orientation_covariance = self.orientation_covariance
+            imu.angular_velocity_covariance = self.angular_velocity_covariance
+            imu.linear_acceleration_covariance = self.linear_acceleration_covariance
+
+            imu.linear_acceleration.x = self.linear_acceleration_x_filter
+            imu.linear_acceleration.y = self.linear_acceleration_y_filter
+            imu.linear_acceleration.z = self.linear_acceleration_z_filter
+
+            imu.angular_velocity.x = self.angular_velocity_x_filter
+            imu.angular_velocity.y = self.angular_velocity_y_filter
+            imu.angular_velocity.z = self.angular_velocity_z_filter
+            imu.orientation = self.orientation_filter
+
+            self.imu_pub.publish(imu)
+            self.rate_imu.sleep()
+        except KeyboardInterrupt:
+            print "KeyboardInterrupt"
+
+if __name__ == '__main__':
+    rospy.init_node('imu_filter', anonymous=True)
+    try:
+        imu_filter()
+    except rospy.ROSInterruptException:
+        rospy.logerr('Euler orientation failed')

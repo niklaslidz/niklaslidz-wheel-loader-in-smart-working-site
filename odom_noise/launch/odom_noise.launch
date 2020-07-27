@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+
+	<node name="odom_noise" pkg="odom_noise" type="odom_noise.py">
+	</node>
+
+</launch>

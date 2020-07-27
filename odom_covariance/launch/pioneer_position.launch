@@ -1,0 +1,39 @@
+<launch>
+
+	<node pkg="xsens_driver" type="mtnode.py" name="mtnode">
+		<param name="device" value="/dev/ttyUSB0" />
+		<param name="baudrate" value="115200" />
+		<param name="frame_id" value="base_footprint" />
+	</node>
+
+	<!--https://github.com/eemmyy23/odom_covariance-->
+	<node pkg="odom_covariance" type="odom_covariance_node" name="odom_covariance_node">
+		<remap from="inputOdom" to="RosAria/pose" />
+		<remap from="outputOdom" to="pioneerOdom" />
+	</node>
+
+	<node pkg="gps_common" type="utm_odometry_node" name="utm_odometry_node">
+		<param name="rot_covariance" value="99999" />
+		<param name="frame_id" value="base_footprint" />
+		
+		<!--<remap from="fix" to="fix" />-->
+		<remap from="odom" to="gpsOdom" />
+	</node>
+
+	<node pkg="robot_pose_ekf" type="robot_pose_ekf" name="robot_pose_ekf">
+		<param name="output_frame" value="odom_combined"/>
+		<param name="freq" value="30"/>
+		<param name="sensor_timeout" value="1.0"/>  
+		<param name="odom_used" value="true"/>
+		<param name="imu_used" value="true"/>
+		<param name="vo_used" value="false"/>
+		<param name="debug" value="true"/>
+		<param name="self_diagnose" value="true"/>
+		
+		<remap from="odom" to="pioneerOdom" />
+		<remap from="imu_data" to="imu/data" />
+		<remap from="vo" to="gpsOdom" />
+	</node>
+
+</launch>
+

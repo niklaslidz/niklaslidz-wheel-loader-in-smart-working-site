@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="loader">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.55665670326581 -0.0138174145921449 -0.0664583682541744"
+        rpy="0 0 0" />
+      <mass
+        value="13223.452625785" />
+      <inertia
+        ixx="7451.37504617896"
+        ixy="301.16148285218"
+        ixz="-2559.48543643072"
+        iyy="19834.9134470092"
+        iyz="68.3815091272382"
+        izz="18202.2643661372" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel2_Link">
+    <inertial>
+      <origin
+        xyz="4.73709738102457E-10 7.9532016988404E-05 4.87341278443409E-11"
+        rpy="0 0 0" />
+      <mass
+        value="574.034970628394" />
+      <inertia
+        ixx="89.1558780558126"
+        ixy="1.12463950833503E-06"
+        ixz="-6.93618029951197E-08"
+        iyy="156.161835098856"
+        iyz="2.13572823136651E-07"
+        izz="89.1558857312513" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/wheel2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/wheel2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel2_joint"
+    type="continuous">
+    <origin
+      xyz="-1.5967 0.94593 -0.82885"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel2_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel4_Link">
+    <inertial>
+      <origin
+        xyz="-2.24968488282684E-10 -7.9532016988515E-05 -4.19719148325726E-10"
+        rpy="0 0 0" />
+      <mass
+        value="574.034970628394" />
+      <inertia
+        ixx="89.155884575714"
+        ixy="6.24643154024022E-07"
+        ixz="-2.74568751980936E-06"
+        iyy="156.161835098856"
+        iyz="9.59295771734319E-07"
+        izz="89.1558792113496" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/wheel4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/wheel4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel4_joint"
+    type="continuous">
+    <origin
+      xyz="-1.5967 -0.98694 -0.82885"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel4_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="gps1_Link">
+    <inertial>
+      <origin
+        xyz="1.11022302462516E-16 -5.55111512312578E-17 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.045553093477052" />
+      <inertia
+        ixx="8.63610730502445E-06"
+        ixy="-1.88079096131566E-37"
+        ixz="2.99232872843359E-38"
+        iyy="8.63610730502445E-06"
+        iyz="-2.20074750507801E-38"
+        izz="1.42353417115788E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/gps1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/gps1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gps1_joint"
+    type="fixed">
+    <origin
+      xyz="-0.44782 0.42653 1.5212"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="gps1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="gps2_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0.00999999999999979"
+        rpy="0 0 0" />
+      <mass
+        value="0.045553093477052" />
+      <inertia
+        ixx="8.63610730502445E-06"
+        ixy="1.88079096131566E-37"
+        ixz="2.99232872843359E-38"
+        iyy="8.63610730502445E-06"
+        iyz="-2.20074750507801E-38"
+        izz="1.42353417115788E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/gps2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/gps2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gps2_joint"
+    type="fixed">
+    <origin
+      xyz="-0.44782 -0.38529 1.5212"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="gps2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="gps3_Link">
+    <inertial>
+      <origin
+        xyz="0 -5.55111512312578E-17 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.045553093477052" />
+      <inertia
+        ixx="8.63610730502445E-06"
+        ixy="0"
+        ixz="2.99232872843359E-38"
+        iyy="8.63610730502445E-06"
+        iyz="-2.20074750507801E-38"
+        izz="1.42353417115788E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/gps3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/gps3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gps3_joint"
+    type="fixed">
+    <origin
+      xyz="-0.98943 0.42653 1.5212"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="gps3_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="gps4_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.045553093477052" />
+      <inertia
+        ixx="8.63610730502445E-06"
+        ixy="3.76158192263132E-37"
+        ixz="2.99232872843359E-38"
+        iyy="8.63610730502445E-06"
+        iyz="-1.76322918752411E-37"
+        izz="1.42353417115788E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/gps4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/gps4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="gps4_joint"
+    type="fixed">
+    <origin
+      xyz="-0.98943 -0.38529 1.5212"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="gps4_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="front_Link">
+    <inertial>
+      <origin
+        xyz="2.00422728096564 -0.00113540071892237 0.492234503474334"
+        rpy="0 0 0" />
+      <mass
+        value="8235.2266576128" />
+      <inertia
+        ixx="4438.13640615043"
+        ixy="-9.95949001599743"
+        ixz="-2382.3855360236"
+        iyy="12032.8561967279"
+        iyz="9.54928865033286"
+        izz="12775.1395490104" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/front_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/front_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_joint"
+    type="revolute">
+    <origin
+      xyz="0.55527 0.020622 -0.14482"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_Link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.79"
+      upper="0.79"
+      effort="100000000000000000000"
+      velocity="10000000000000000" />
+  </joint>
+  <link
+    name="wheel1_Link">
+    <inertial>
+      <origin
+        xyz="4.73907579845445E-10 7.9532016988848E-05 4.67712535368037E-11"
+        rpy="0 0 0" />
+      <mass
+        value="574.034970628393" />
+      <inertia
+        ixx="89.1558780553692"
+        ixy="1.12551506313018E-06"
+        ixz="-3.75481658349861E-08"
+        iyy="156.161835098855"
+        iyz="2.08909790394095E-07"
+        izz="89.1558857316946" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/wheel1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/wheel1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel1_joint"
+    type="continuous">
+    <origin
+      xyz="0.61155 0.98568 -0.75303"
+      rpy="0 0 0" />
+    <parent
+      link="front_Link" />
+    <child
+      link="wheel1_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="wheel3_Link">
+    <inertial>
+      <origin
+        xyz="2.92078805586016E-10 -7.9532016988515E-05 -3.76120246059486E-10"
+        rpy="0 0 0" />
+      <mass
+        value="574.034970628395" />
+      <inertia
+        ixx="89.1558821361912"
+        ixy="-6.22678023202415E-07"
+        ixz="3.83066804534163E-06"
+        iyy="156.161835098856"
+        iyz="9.60572425990918E-07"
+        izz="89.1558816508725" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/wheel3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/wheel3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel3_joint"
+    type="continuous">
+    <origin
+      xyz="0.61155 -0.94718 -0.75303"
+      rpy="0 0 0" />
+    <parent
+      link="front_Link" />
+    <child
+      link="wheel3_Link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="imu1_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0.00999999999999979"
+        rpy="0 0 0" />
+      <mass
+        value="0.036638824322491" />
+      <inertia
+        ixx="6.94611044447225E-06"
+        ixy="-1.41059322098675E-37"
+        ixz="4.37492474111058E-22"
+        iyy="6.94611044447225E-06"
+        iyz="-1.1718548413689E-22"
+        izz="1.14496326007784E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/imu1_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/imu1_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu1_joint"
+    type="fixed">
+    <origin
+      xyz="0.61155 0.38018 -0.92303"
+      rpy="0 0 0" />
+    <parent
+      link="front_Link" />
+    <child
+      link="imu1_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="imu2_Link">
+    <inertial>
+      <origin
+        xyz="0 -9.27036225562006E-15 0.01"
+        rpy="0 0 0" />
+      <mass
+        value="0.036638824322491" />
+      <inertia
+        ixx="6.94611044447225E-06"
+        ixy="-4.05874689451919E-34"
+        ixz="4.37492474111058E-22"
+        iyy="6.94611044447225E-06"
+        iyz="-4.17004545301125E-18"
+        izz="1.14496326007784E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/imu2_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/imu2_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu2_joint"
+    type="fixed">
+    <origin
+      xyz="0.61155 -0.38018 -0.92303"
+      rpy="0 0 0" />
+    <parent
+      link="front_Link" />
+    <child
+      link="imu2_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="imu3_Link">
+    <inertial>
+      <origin
+        xyz="0 -2.77555756156289E-17 0.00999999999999979"
+        rpy="0 0 0" />
+      <mass
+        value="0.036638824322491" />
+      <inertia
+        ixx="6.94611044447225E-06"
+        ixy="-6.34402243733318E-37"
+        ixz="-5.71418741696076E-21"
+        iyy="6.94611044447225E-06"
+        iyz="4.99991398984066E-22"
+        izz="1.14496326007784E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/imu3_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/imu3_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu3_joint"
+    type="fixed">
+    <origin
+      xyz="-1.5967 -0.28875 -0.98635"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu3_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="imu4_Link">
+    <inertial>
+      <origin
+        xyz="0 0 0.00999999999999979"
+        rpy="0 0 0" />
+      <mass
+        value="0.036638824322491" />
+      <inertia
+        ixx="6.94611044447225E-06"
+        ixy="-6.34402243733318E-37"
+        ixz="-5.71418741696075E-21"
+        iyy="6.94611044447225E-06"
+        iyz="4.99991398984066E-22"
+        izz="1.14496326007784E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/imu4_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://loader/meshes/imu4_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="imu4_joint"
+    type="fixed">
+    <origin
+      xyz="-1.5967 0.33 -0.98635"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu4_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+<!--friction-->
+<gazebo reference="'wheel1_link'">
+            <material>Gazebo/DarkGrey</material>
+            <mu1>0.7</mu1>
+            <mu2>100000</mu2>
+</gazebo>
+<gazebo reference="'wheel2_link'">
+            <material>Gazebo/DarkGrey</material>
+            <mu1>0.7</mu1>
+            <mu2>100000</mu2>
+</gazebo>
+<gazebo reference="'wheel3_link'">
+            <material>Gazebo/DarkGrey</material>
+            <mu1>0.7</mu1>
+            <mu2>100000</mu2>
+</gazebo>
+<gazebo reference="'wheel4_link'">
+            <material>Gazebo/DarkGrey</material>
+            <mu1>0.7</mu1>
+            <mu2>100000</mu2>
+</gazebo>
+
+<!--imu-->
+<gazebo reference="imu1_Link">
+    <gravity>true</gravity>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>__default_topic__</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu_data1</topicName>
+        <bodyName>imu1_Link</bodyName>
+        <updateRateHZ>100</updateRateHZ>
+        <gaussianNoise>0.05</gaussianNoise>  <!-- IMU NIOSE(SOME REASONABLE)-->
+        <xyzOffset>0.05 0.05 0.05</xyzOffset>
+        <rpyOffset>0.01 0.01 0.01</rpyOffset>
+        <frameName>imu1_Link</frameName>
+        <initialOrientationAsReference>false</initialOrientationAsReference>
+       </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+
+<gazebo reference="imu2_Link">
+    <gravity>true</gravity>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>__default_topic__</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu_data2</topicName>
+        <bodyName>imu2_Link</bodyName>
+        <updateRateHZ>100</updateRateHZ>
+        <gaussianNoise>0.05</gaussianNoise>  <!-- IMU NIOSE(SOME REASONABLE)-->
+        <xyzOffset>0.05 0.05 0.05</xyzOffset>
+        <rpyOffset>0.01 0.01 0.01</rpyOffset>
+        <frameName>imu2_Link</frameName>
+        <initialOrientationAsReference>false</initialOrientationAsReference>
+       </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+<gazebo reference="imu3_Link">
+    <gravity>true</gravity>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>__default_topic__</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu_data3</topicName>
+        <bodyName>imu3_Link</bodyName>
+        <updateRateHZ>100</updateRateHZ>
+        <gaussianNoise>0.05</gaussianNoise>  <!-- IMU NIOSE(SOME REASONABLE)-->
+        <xyzOffset>0.05 0.05 0.05</xyzOffset>
+        <rpyOffset>0.01 0.01 0.01</rpyOffset>
+        <frameName>imu3_Link</frameName>
+        <initialOrientationAsReference>false</initialOrientationAsReference>
+       </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+<gazebo reference="imu4_Link">
+    <gravity>true</gravity>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>__default_topic__</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu_data4</topicName>
+        <bodyName>imu4_Link</bodyName>
+        <updateRateHZ>100</updateRateHZ>
+        <gaussianNoise>0.05</gaussianNoise>  <!-- IMU NIOSE(SOME REASONABLE)-->
+        <xyzOffset>0.05 0.05 0.05</xyzOffset>
+        <rpyOffset>0.05 0.05 0.05</rpyOffset>
+        <frameName>imu4_Link</frameName>
+        <initialOrientationAsReference>false</initialOrientationAsReference>
+       </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+
+<!--gps-->
+
+<gazebo>
+    <plugin name="gps_controller" filename="libhector_gazebo_ros_gps.so">
+      <updateRate>5</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <bodyName>gps1_Link</bodyName>
+      <frameId>gps1_Link</frameId>
+      <topicName>/gps/fix1</topicName>
+      <velocityTopicName>/navsat/vel1</velocityTopicName>
+      <drift>1.5 1.5 1.5</drift>
+      <gaussiannoise>0.01 0.01 0.01</gaussiannoise>
+      <velocitydrift>0 0 0</velocitydrift>
+      <velocitygaussiannoise>0.05 0.05 0.05</velocitygaussiannoise>
+    </plugin>
+  </gazebo>
+
+<gazebo>
+    <plugin name="gps_controller" filename="libhector_gazebo_ros_gps.so">
+      <updateRate>5</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <bodyName>gps2_Link</bodyName>
+      <frameId>gps2_Link</frameId>
+      <topicName>/gps/fix2</topicName>
+      <velocityTopicName>/navsat/vel2</velocityTopicName>
+      <drift>1.5 1.5 1.5</drift>
+      <gaussiannoise>0.01 0.01 0.01</gaussiannoise>
+      <velocitydrift>0 0 0</velocitydrift>
+      <velocitygaussiannoise>0.05 0.05 0.05</velocitygaussiannoise>
+    </plugin>
+  </gazebo>
+
+<gazebo>
+    <plugin name="gps_controller" filename="libhector_gazebo_ros_gps.so">
+      <updateRate>5</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <bodyName>gps3_Link</bodyName>
+      <frameId>gps3_Link</frameId>
+      <topicName>/gps/fix3</topicName>
+      <velocityTopicName>/navsat/vel3</velocityTopicName>
+      <drift>1.5 1.5 1.5</drift>
+      <gaussiannoise>0.01 0.01 0.01</gaussiannoise>
+      <velocitydrift>0 0 0</velocitydrift>
+      <velocitygaussiannoise>0.05 0.05 0.05</velocitygaussiannoise>
+    </plugin>
+  </gazebo>
+
+<gazebo>
+    <plugin name="gps_controller" filename="libhector_gazebo_ros_gps.so">
+      <updateRate>5</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <bodyName>gps4_Link</bodyName>
+      <frameId>gps4_Link</frameId>
+      <topicName>/gps/fix4</topicName>
+      <velocityTopicName>/navsat/vel4</velocityTopicName>
+      <drift>0.1 0.1 0.1</drift>
+      <gaussiannoise>0.01 0.01 0.01</gaussiannoise>
+      <velocitydrift>0 0 0</velocitydrift>
+      <velocitygaussiannoise>0.05 0.05 0.05</velocitygaussiannoise>
+    </plugin>
+  </gazebo>
+
+
+<!--ground truth-->
+<gazebo>
+  <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+    <alwaysOn>true</alwaysOn>
+    <updateRate>100.0</updateRate>
+    <bodyName>base_link</bodyName>
+    <topicName>ground_truth/state</topicName>
+    <gaussianNoise>0</gaussianNoise>
+    <frameName>world</frameName>
+    <xyzOffsets>0 0 0</xyzOffsets>
+    <rpyOffsets>0 0 0</rpyOffsets>
+  </plugin>
+</gazebo>
+
+
+
+<gazebo>
+  <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <updateRate>100.0</updateRate>
+    <robotNamespace>/</robotNamespace>
+    <leftFrontJoint>wheel1_joint</leftFrontJoint>
+    <rightFrontJoint>wheel3_joint</rightFrontJoint>
+    <leftRearJoint>wheel2_joint</leftRearJoint>
+    <rightRearJoint>wheel4_joint</rightRearJoint>
+    <wheelSeparation>1.93287</wheelSeparation>
+    <wheelDiameter>1.375</wheelDiameter>
+    <robotBaseFrame>base_link</robotBaseFrame>
+    <covariance_x>0.000100</covariance_x>
+    <covariance_y>0.000100</covariance_y>
+    <covariance_yaw>0.010000</covariance_yaw>
+    <torque>1</torque>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <broadcastTF>1</broadcastTF>
+  </plugin>
+</gazebo>
+
+<transmission name="tran5">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="front_joint">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor5">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+</transmission>
+
+<transmission name="tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel1_joint">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor1">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel2_joint">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+<transmission name="tran3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel3_joint">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor3">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="tran4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="wheel4_joint">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor4">
+      <hardwareInterface>VelocityJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+
+
+<gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    <robotNamespace>/loader</robotNamespace>
+  </plugin>
+</gazebo>
+</robot>

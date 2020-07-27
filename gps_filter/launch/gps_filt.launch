@@ -1,0 +1,7 @@
+<launch>
+
+<node ns="gps_filtered_gps1" pkg="gps_filter" type="gps_filter.py" name="gps_fil" output="screen">
+<remap from="GPS" to= "/gps/fix1"/>
+<remap from="/gps_filtered" to= "/gps/fix1_filtered"/>
+</node>
+</launch>

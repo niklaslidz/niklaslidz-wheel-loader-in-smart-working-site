@@ -1,0 +1,651 @@
+<sdf version='1.6'>
+  <model name='loader'>
+    <link name='base_link'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>-1.55665 -0.013817 -0.066441 0 -0 0</pose>
+        <mass>13223.7</mass>
+        <inertia>
+          <ixx>7451.94</ixx>
+          <ixy>301.156</ixy>
+          <ixz>-2559.73</ixz>
+          <iyy>19835.6</iyy>
+          <iyz>68.3738</iyz>
+          <izz>18202.4</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__gps1_Link_collision_1'>
+        <pose frame=''>-0.44782 0.42653 1.5212 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/gps1_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__gps2_Link_collision_2'>
+        <pose frame=''>-0.44782 -0.38529 1.5212 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/gps2_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__gps3_Link_collision_3'>
+        <pose frame=''>-0.98943 0.42653 1.5212 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/gps3_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__gps4_Link_collision_4'>
+        <pose frame=''>-0.98943 -0.38529 1.5212 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/gps4_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__imu3_Link_collision_5'>
+        <pose frame=''>-1.5967 -0.28875 -0.98635 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/imu3_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__imu4_Link_collision_6'>
+        <pose frame=''>-1.5967 0.33 -0.98635 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/imu4_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__gps1_Link_visual_1'>
+        <pose frame=''>-0.44782 0.42653 1.5212 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/gps1_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__gps2_Link_visual_2'>
+        <pose frame=''>-0.44782 -0.38529 1.5212 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/gps2_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__gps3_Link_visual_3'>
+        <pose frame=''>-0.98943 0.42653 1.5212 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/gps3_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__gps4_Link_visual_4'>
+        <pose frame=''>-0.98943 -0.38529 1.5212 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/gps4_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__imu3_Link_visual_5'>
+        <pose frame=''>-1.5967 -0.28875 -0.98635 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/imu3_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__imu4_Link_visual_6'>
+        <pose frame=''>-1.5967 0.33 -0.98635 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/imu4_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay/>
+      <gravity>1</gravity>
+      <sensor name='imu_sensor' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <visualize>1</visualize>
+        <topic>__default_topic__</topic>
+        <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+          <topicName>imu_data3</topicName>
+          <bodyName>imu3_Link</bodyName>
+          <updateRateHZ>100</updateRateHZ>
+          <gaussianNoise>0.05</gaussianNoise>
+          <xyzOffset>0.05 0.05 0.05</xyzOffset>
+          <rpyOffset>0.01 0.01 0.01</rpyOffset>
+          <frameName>imu3_Link</frameName>
+          <initialOrientationAsReference>0</initialOrientationAsReference>
+        </plugin>
+        <pose frame=''>-1.5967 -0.28875 -0.98635 0 -0 0</pose>
+      </sensor>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <gravity>1</gravity>
+      <sensor name='imu_sensor' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <visualize>1</visualize>
+        <topic>__default_topic__</topic>
+        <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+          <topicName>imu_data4</topicName>
+          <bodyName>imu4_Link</bodyName>
+          <updateRateHZ>100</updateRateHZ>
+          <gaussianNoise>0.05</gaussianNoise>
+          <xyzOffset>0.05 0.05 0.05</xyzOffset>
+          <rpyOffset>0.05 0.05 0.05</rpyOffset>
+          <frameName>imu4_Link</frameName>
+          <initialOrientationAsReference>0</initialOrientationAsReference>
+        </plugin>
+        <pose frame=''>-1.5967 0.33 -0.98635 0 -0 0</pose>
+      </sensor>
+    </link>
+    <link name='front_Link'>
+      <pose frame=''>0.55527 0.020622 -0.14482 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>2.00421 -0.001135 0.492222 0 -0 0</pose>
+        <mass>8235.3</mass>
+        <inertia>
+          <ixx>4438.29</ixx>
+          <ixy>-9.95937</ixy>
+          <ixz>-2382.53</ixz>
+          <iyy>12033.1</iyy>
+          <iyz>9.54941</iyz>
+          <izz>12775.3</izz>
+        </inertia>
+      </inertial>
+      <collision name='front_Link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/front_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='front_Link_fixed_joint_lump__imu1_Link_collision_1'>
+        <pose frame=''>0.61155 0.38018 -0.92303 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/imu1_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='front_Link_fixed_joint_lump__imu2_Link_collision_2'>
+        <pose frame=''>0.61155 -0.38018 -0.92303 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/imu2_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='front_Link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/front_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='front_Link_fixed_joint_lump__imu1_Link_visual_1'>
+        <pose frame=''>0.61155 0.38018 -0.92303 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/imu1_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <visual name='front_Link_fixed_joint_lump__imu2_Link_visual_2'>
+        <pose frame=''>0.61155 -0.38018 -0.92303 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/imu2_Link.STL</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>__default__</uri>
+            <name>__default__</name>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay/>
+      <gravity>1</gravity>
+      <sensor name='imu_sensor' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <visualize>1</visualize>
+        <topic>__default_topic__</topic>
+        <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+          <topicName>imu_data1</topicName>
+          <bodyName>imu1_Link</bodyName>
+          <updateRateHZ>100</updateRateHZ>
+          <gaussianNoise>0.05</gaussianNoise>
+          <xyzOffset>0.05 0.05 0.05</xyzOffset>
+          <rpyOffset>0.01 0.01 0.01</rpyOffset>
+          <frameName>imu1_Link</frameName>
+          <initialOrientationAsReference>0</initialOrientationAsReference>
+        </plugin>
+        <pose frame=''>0.61155 0.38018 -0.92303 0 -0 0</pose>
+      </sensor>
+      <gravity>1</gravity>
+      <velocity_decay/>
+      <gravity>1</gravity>
+      <sensor name='imu_sensor' type='imu'>
+        <always_on>1</always_on>
+        <update_rate>100</update_rate>
+        <visualize>1</visualize>
+        <topic>__default_topic__</topic>
+        <plugin name='imu_plugin' filename='libgazebo_ros_imu_sensor.so'>
+          <topicName>imu_data2</topicName>
+          <bodyName>imu2_Link</bodyName>
+          <updateRateHZ>100</updateRateHZ>
+          <gaussianNoise>0.05</gaussianNoise>
+          <xyzOffset>0.05 0.05 0.05</xyzOffset>
+          <rpyOffset>0.01 0.01 0.01</rpyOffset>
+          <frameName>imu2_Link</frameName>
+          <initialOrientationAsReference>0</initialOrientationAsReference>
+        </plugin>
+        <pose frame=''>0.61155 -0.38018 -0.92303 0 -0 0</pose>
+      </sensor>
+    </link>
+    <joint name='front_joint' type='revolute'>
+      <child>front_Link</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-0.79</lower>
+          <upper>0.79</upper>
+          <effort>1e+20</effort>
+          <velocity>1e+16</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='wheel1_Link'>
+      <pose frame=''>1.16682 1.0063 -0.89785 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 8e-05 0 0 -0 0</pose>
+        <mass>574.035</mass>
+        <inertia>
+          <ixx>89.1559</ixx>
+          <ixy>1.12552e-06</ixy>
+          <ixz>-3.75482e-08</ixz>
+          <iyy>156.162</iyy>
+          <iyz>2.0891e-07</iyz>
+          <izz>89.1559</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel1_Link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/wheel1_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheel1_Link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/wheel1_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='wheel1_joint' type='revolute'>
+      <child>wheel1_Link</child>
+      <parent>front_Link</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='wheel3_Link'>
+      <pose frame=''>1.16682 -0.926558 -0.89785 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 -8e-05 -0 0 -0 0</pose>
+        <mass>574.035</mass>
+        <inertia>
+          <ixx>89.1559</ixx>
+          <ixy>-6.22678e-07</ixy>
+          <ixz>3.83067e-06</ixz>
+          <iyy>156.162</iyy>
+          <iyz>9.60572e-07</iyz>
+          <izz>89.1559</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel3_Link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/wheel3_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheel3_Link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/wheel3_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='wheel3_joint' type='revolute'>
+      <child>wheel3_Link</child>
+      <parent>front_Link</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='wheel2_Link'>
+      <pose frame=''>-1.5967 0.94593 -0.82885 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 8e-05 0 0 -0 0</pose>
+        <mass>574.035</mass>
+        <inertia>
+          <ixx>89.1559</ixx>
+          <ixy>1.12464e-06</ixy>
+          <ixz>-6.93618e-08</ixz>
+          <iyy>156.162</iyy>
+          <iyz>2.13573e-07</iyz>
+          <izz>89.1559</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel2_Link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/wheel2_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheel2_Link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/wheel2_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='wheel2_joint' type='revolute'>
+      <child>wheel2_Link</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='wheel4_Link'>
+      <pose frame=''>-1.5967 -0.98694 -0.82885 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>-0 -8e-05 -0 0 -0 0</pose>
+        <mass>574.035</mass>
+        <inertia>
+          <ixx>89.1559</ixx>
+          <ixy>6.24643e-07</ixy>
+          <ixz>-2.74569e-06</ixz>
+          <iyy>156.162</iyy>
+          <iyz>9.59296e-07</iyz>
+          <izz>89.1559</izz>
+        </inertia>
+      </inertial>
+      <collision name='wheel4_Link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/wheel4_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='wheel4_Link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://loader/meshes/wheel4_Link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='wheel4_joint' type='revolute'>
+      <child>wheel4_Link</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <plugin name='gps_controller' filename='libhector_gazebo_ros_gps.so'>
+      <updateRate>5</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <frameId>gps1_Link</frameId>
+      <topicName>/gps/fix1</topicName>
+      <velocityTopicName>/navsat/vel1</velocityTopicName>
+      <drift>1.5 1.5 1.5</drift>
+      <gaussiannoise>0.01 0.01 0.01</gaussiannoise>
+      <velocitydrift>0 0 0</velocitydrift>
+      <velocitygaussiannoise>0.05 0.05 0.05</velocitygaussiannoise>
+      <bodyName>base_link</bodyName>
+      <xyzOffset>0.44782 -0.42653 -1.5212</xyzOffset>
+      <rpyOffset>0 -0 0</rpyOffset>
+    </plugin>
+    <plugin name='gps_controller' filename='libhector_gazebo_ros_gps.so'>
+      <updateRate>5</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <frameId>gps2_Link</frameId>
+      <topicName>/gps/fix2</topicName>
+      <velocityTopicName>/navsat/vel2</velocityTopicName>
+      <drift>1.5 1.5 1.5</drift>
+      <gaussiannoise>0.01 0.01 0.01</gaussiannoise>
+      <velocitydrift>0 0 0</velocitydrift>
+      <velocitygaussiannoise>0.05 0.05 0.05</velocitygaussiannoise>
+      <bodyName>base_link</bodyName>
+      <xyzOffset>0.44782 0.38529 -1.5212</xyzOffset>
+      <rpyOffset>0 -0 0</rpyOffset>
+    </plugin>
+    <plugin name='gps_controller' filename='libhector_gazebo_ros_gps.so'>
+      <updateRate>5</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <frameId>gps3_Link</frameId>
+      <topicName>/gps/fix3</topicName>
+      <velocityTopicName>/navsat/vel3</velocityTopicName>
+      <drift>1.5 1.5 1.5</drift>
+      <gaussiannoise>0.01 0.01 0.01</gaussiannoise>
+      <velocitydrift>0 0 0</velocitydrift>
+      <velocitygaussiannoise>0.05 0.05 0.05</velocitygaussiannoise>
+      <bodyName>base_link</bodyName>
+      <xyzOffset>0.98943 -0.42653 -1.5212</xyzOffset>
+      <rpyOffset>0 -0 0</rpyOffset>
+    </plugin>
+    <plugin name='gps_controller' filename='libhector_gazebo_ros_gps.so'>
+      <updateRate>5</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <frameId>gps4_Link</frameId>
+      <topicName>/gps/fix4</topicName>
+      <velocityTopicName>/navsat/vel4</velocityTopicName>
+      <drift>0.1 0.1 0.1</drift>
+      <gaussiannoise>0.01 0.01 0.01</gaussiannoise>
+      <velocitydrift>0 0 0</velocitydrift>
+      <velocitygaussiannoise>0.05 0.05 0.05</velocitygaussiannoise>
+      <bodyName>base_link</bodyName>
+      <xyzOffset>0.98943 0.38529 -1.5212</xyzOffset>
+      <rpyOffset>0 -0 0</rpyOffset>
+    </plugin>
+    <plugin name='p3d_base_controller' filename='libgazebo_ros_p3d.so'>
+      <alwaysOn>1</alwaysOn>
+      <updateRate>100.0</updateRate>
+      <bodyName>base_link</bodyName>
+      <topicName>ground_truth/state</topicName>
+      <gaussianNoise>0</gaussianNoise>
+      <frameName>world</frameName>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <rpyOffsets>0 0 0</rpyOffsets>
+    </plugin>
+    <plugin name='skid_steer_drive_controller' filename='libgazebo_ros_skid_steer_drive.so'>
+      <updateRate>100.0</updateRate>
+      <robotNamespace>/</robotNamespace>
+      <leftFrontJoint>wheel1_joint</leftFrontJoint>
+      <rightFrontJoint>wheel3_joint</rightFrontJoint>
+      <leftRearJoint>wheel2_joint</leftRearJoint>
+      <rightRearJoint>wheel4_joint</rightRearJoint>
+      <wheelSeparation>1.93287</wheelSeparation>
+      <wheelDiameter>1.375</wheelDiameter>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <covariance_x>0.000100</covariance_x>
+      <covariance_y>0.000100</covariance_y>
+      <covariance_yaw>0.010000</covariance_yaw>
+      <torque>1</torque>
+      <commandTopic>cmd_vel</commandTopic>
+      <odometryTopic>odom</odometryTopic>
+      <odometryFrame>odom</odometryFrame>
+      <broadcastTF>1</broadcastTF>
+    </plugin>
+    <static>0</static>
+    <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+      <robotNamespace>/loader</robotNamespace>
+    </plugin>
+  </model>
+</sdf>

@@ -1,0 +1,8 @@
+<launch>
+
+<node ns="Mapper_res_2" pkg="mapper_2" type="map_mapper_2.py" name="map_mapper_2" output="screen">
+</node>
+
+<node ns="Mapper_slope_2" pkg="mapper_slope_2" type="map_mapper_slope_2.py" name="map_mapper_slope_2" output="screen">
+</node>
+</launch>

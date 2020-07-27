@@ -1,0 +1,12 @@
+<launch>
+
+
+	<!--https://github.com/eemmyy23/odom_covariance-->
+	<node pkg="odom_covariance" type="odom_covariance_node" name="odom_covariance_node">
+		<remap from="inputOdom" to="odom_encoder" />
+		<remap from="outputOdom" to="pioneerOdom" />
+	</node>
+
+
+</launch>
+
