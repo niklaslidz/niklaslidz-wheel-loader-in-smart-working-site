@@ -20,7 +20,7 @@ Open  niklaslidz-wheel-loader-in-smart-working-site/loader/launch/
 CTRL-C to quit
  
  
- ## 2.Run the plotter
+ ## 3.Run the plotter
  Open  niklaslidz-wheel-loader-in-smart-working-site/loader/launch/ 
  ```bash
  roslaunch  loader plot.launch
