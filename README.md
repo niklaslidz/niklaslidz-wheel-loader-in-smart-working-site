@@ -9,6 +9,17 @@ Open  niklaslidz-wheel-loader-in-smart-working-site/loader/launch/
  ```bash
  roslaunch  loader_cont loader_control.launch
  ```
+ Moving around:
+ w : **forward**    
+ a : **left turn**
+ s : **backward**
+ d : **right turn**
+ x : **stop the wheel loader**
+ c : **stop turning**
+   
+CTRL-C to quit
+ 
+ 
  ## 2.Run the plotter
  Open  niklaslidz-wheel-loader-in-smart-working-site/loader/launch/ 
  ```bash
