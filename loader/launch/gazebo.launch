@@ -149,15 +149,15 @@
     <remap from="imu" to= "/imu_data1"/>
     <remap from="/imu_filtered" to= "/imu_data1_filtered"/>
 </node>
-<node ns="imu_filtered_imu2" pkg="imu_filter" type="imu_filt2.py" name="imu_fil" output="screen">
+<node ns="imu_filtered_imu2" pkg="imu_filter" type="imu_filt.py" name="imu_fil" output="screen">
     <remap from="imu" to= "/imu_data2"/>
     <remap from="/imu_filtered" to= "/imu_data2_filtered"/>
 </node>
-<node ns="imu_filtered_imu3" pkg="imu_filter" type="imu_filt3.py" name="imu_fil" output="screen">
+<node ns="imu_filtered_imu3" pkg="imu_filter" type="imu_filt.py" name="imu_fil" output="screen">
     <remap from="imu" to= "/imu_data3"/>
     <remap from="/imu_filtered" to= "/imu_data3_filtered"/>
 </node>
-<node ns="imu_filtered_imu4" pkg="imu_filter" type="imu_filt4.py" name="imu_fil" output="screen">
+<node ns="imu_filtered_imu4" pkg="imu_filter" type="imu_filt.py" name="imu_fil" output="screen">
     <remap from="imu" to= "/imu_data4"/>
     <remap from="/imu_filtered" to= "/imu_data4_filtered"/>
 </node>
@@ -198,7 +198,7 @@
       <param name="transform_time_offset" value="0.1"/>
 
       <param name="odom0" value="/noisy_odom"/>
-      <param name="imu0" value="/imu_data1_filtered"/>
+      <param name="imu0" value="imu_data1"/>
 
       <rosparam param="odom0_config">[false, false, false,
                                       false, false, true,
@@ -1291,7 +1291,7 @@
 
       <remap from="/odometry/filtered" to="/ukf/odometry/filtered/3imu_3gps"/>
       <remap from="/gps/fix" to="/gps/fix2_filtered"/>
-      <remap from="/imu/data" to="/imu_data1_filtered"/>
+      <remap from="/imu/data" to="/imu_data1"/>
     <remap from="/odometry/gps" to="/ukf/odometry/gps_3imu_3gps_2"/>   
  </node>
 
