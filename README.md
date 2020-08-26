@@ -4,6 +4,8 @@ Open  niklaslidz-wheel-loader-in-smart-working-site/loader/launch/
 ```bash
  roslaunch  loader gazebo.launch
  ```
+ 
+ ![image](https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/img_gazebo.png)
  ## 2.Run the Controller to move the wheel loader
  Open niklaslidz-wheel-loader-in-smart-working-site/loader_cont/launch/
  ```bash
