@@ -46,3 +46,8 @@ folder
  ```bash
 self.mapper.SaveMap('/home/hanke/catkin_ws/src/mapper/solution_map.jpg')
  ```
+ 
+ 
+ 
+![image](https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/plot_video.gif) 
+ 
