@@ -1,4 +1,4 @@
-# niklaslidz-wheel-loader-in-smart-working-site
+# Wheel loader in smart working site
 ## 1.Run the Wheel loader
 Open  niklaslidz-wheel-loader-in-smart-working-site/loader/launch/   
 ```bash
