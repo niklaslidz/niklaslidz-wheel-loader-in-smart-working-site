@@ -1,9 +1,11 @@
-# niklaslidz-wheel-loader-in-smart-working-site
+# Wheel loader in smart working site
 ## 1.Run the Wheel loader
 Open  niklaslidz-wheel-loader-in-smart-working-site/loader/launch/   
 ```bash
  roslaunch  loader gazebo.launch
  ```
+ 
+ ![image](https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/img_gazebo.png)
  ## 2.Run the Controller to move the wheel loader
  Open niklaslidz-wheel-loader-in-smart-working-site/loader_cont/launch/
  ```bash
@@ -44,3 +46,8 @@ folder
  ```bash
 self.mapper.SaveMap('/home/hanke/catkin_ws/src/mapper/solution_map.jpg')
  ```
+ 
+ 
+ 
+![image](https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/plot_video.gif) 
+ 
