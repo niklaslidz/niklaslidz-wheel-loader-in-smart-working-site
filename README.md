@@ -52,3 +52,4 @@ self.mapper.SaveMap('/home/hanke/catkin_ws/src/mapper/solution_map.jpg')
  
  ## 6. Principle
  ### (1)Localization
+![image](://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/overall%20architecture%20of%20the%20localization%20scheme.png)
