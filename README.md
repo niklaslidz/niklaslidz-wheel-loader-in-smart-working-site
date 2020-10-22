@@ -52,5 +52,8 @@ self.mapper.SaveMap('/home/hanke/catkin_ws/src/mapper/solution_map.jpg')
  
  ## 6. Principle
  ### (1)Localization with [Robot_localization](http://wiki.ros.org/robot_localization)
-### (2)Real time plotter
-img src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/0001.jpg" width="400"/><img src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/one_layers_page-0001.jpg" width="400"/>
+ <div align=center><img width="150" height="150" src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/overall%20architecture%20of%20the%20localization%20scheme.png"/></div> 
+ 
+ ### (2)Real time plotter
+ 
+<img src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/0001.jpg" width="400"/><img src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/one_layers_page-0001.jpg" width="400"/>
