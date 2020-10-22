@@ -55,5 +55,6 @@ self.mapper.SaveMap('/home/hanke/catkin_ws/src/mapper/solution_map.jpg')
  <div align=center><img width="400" src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/overall%20architecture%20of%20the%20localization%20scheme.png"/></div> 
  
  ### (2)Real time plotter
- <center class="half">
- <img src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/0001.jpg" width="400"/><img src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/one_layers_page-0001.jpg" width="400"/></center>
+<center class="half">
+ <img src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/0001.jpg" width="400"/><img src="https://github.com/niklaslidz/niklaslidz-wheel-loader-in-smart-working-site/blob/master/img/one_layers_page-0001.jpg" width="400"/>
+</center>
